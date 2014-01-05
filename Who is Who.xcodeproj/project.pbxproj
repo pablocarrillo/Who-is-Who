@@ -26,6 +26,7 @@
 		8BAAACED1879AE56003430D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAAACCC1879AE55003430D9 /* UIKit.framework */; };
 		8BAAACF51879AE56003430D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BAAACF31879AE56003430D9 /* InfoPlist.strings */; };
 		8BAAACF71879AE56003430D9 /* Who_is_WhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAAACF61879AE56003430D9 /* Who_is_WhoTests.m */; };
+		8BFBFEC3187A21100095C6CC /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBFEC2187A21100095C6CC /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8BAAACF21879AE56003430D9 /* Who is WhoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Who is WhoTests-Info.plist"; sourceTree = "<group>"; };
 		8BAAACF41879AE56003430D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8BAAACF61879AE56003430D9 /* Who_is_WhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Who_is_WhoTests.m; sourceTree = "<group>"; };
+		8BFBFEC2187A21100095C6CC /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
 		DA1CBEE82ACE4342A46EE2F8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 		8BAAACBC1879AE55003430D9 = {
 			isa = PBXGroup;
 			children = (
+				8BFBFEC2187A21100095C6CC /* readme.md */,
 				8BAAACCE1879AE55003430D9 /* Who is Who */,
 				8BAAACF01879AE56003430D9 /* Who is WhoTests */,
 				8BAAACC71879AE55003430D9 /* Frameworks */,
@@ -283,6 +286,7 @@
 			files = (
 				8BAAACE41879AE55003430D9 /* Images.xcassets in Resources */,
 				8BAAACD31879AE55003430D9 /* InfoPlist.strings in Resources */,
+				8BFBFEC3187A21100095C6CC /* readme.md in Resources */,
 				8BAAACDC1879AE55003430D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
