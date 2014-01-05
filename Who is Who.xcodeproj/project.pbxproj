@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		056FAFFAD570469BBE4EC20D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1CBEE82ACE4342A46EE2F8 /* libPods.a */; };
+		8B92D4311879C76D0048CCD2 /* WIWConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92D4301879C76D0048CCD2 /* WIWConnections.m */; };
+		8B92D4341879C80B0048CCD2 /* WIWStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92D4331879C80B0048CCD2 /* WIWStaff.m */; };
+		8B92D4381879C9180048CCD2 /* WIWWebToStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92D4371879C9180048CCD2 /* WIWWebToStaff.m */; };
 		8BAAACC91879AE55003430D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAAACC81879AE55003430D9 /* Foundation.framework */; };
 		8BAAACCB1879AE55003430D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAAACCA1879AE55003430D9 /* CoreGraphics.framework */; };
 		8BAAACCD1879AE55003430D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAAACCC1879AE55003430D9 /* UIKit.framework */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67F1902916CA48FDACBE8222 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		8B92D42F1879C76D0048CCD2 /* WIWConnections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIWConnections.h; sourceTree = "<group>"; };
+		8B92D4301879C76D0048CCD2 /* WIWConnections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIWConnections.m; sourceTree = "<group>"; };
+		8B92D4321879C80B0048CCD2 /* WIWStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIWStaff.h; sourceTree = "<group>"; };
+		8B92D4331879C80B0048CCD2 /* WIWStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIWStaff.m; sourceTree = "<group>"; };
+		8B92D4361879C9180048CCD2 /* WIWWebToStaff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIWWebToStaff.h; sourceTree = "<group>"; };
+		8B92D4371879C9180048CCD2 /* WIWWebToStaff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIWWebToStaff.m; sourceTree = "<group>"; };
 		8BAAACC51879AE55003430D9 /* Who is Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Who is Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAAACC81879AE55003430D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8BAAACCA1879AE55003430D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +67,7 @@
 		8BAAACF21879AE56003430D9 /* Who is WhoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Who is WhoTests-Info.plist"; sourceTree = "<group>"; };
 		8BAAACF41879AE56003430D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8BAAACF61879AE56003430D9 /* Who_is_WhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Who_is_WhoTests.m; sourceTree = "<group>"; };
+		DA1CBEE82ACE4342A46EE2F8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 				8BAAACCB1879AE55003430D9 /* CoreGraphics.framework in Frameworks */,
 				8BAAACCD1879AE55003430D9 /* UIKit.framework in Frameworks */,
 				8BAAACC91879AE55003430D9 /* Foundation.framework in Frameworks */,
+				056FAFFAD570469BBE4EC20D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +95,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B92D42D1879BE980048CCD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B92D4321879C80B0048CCD2 /* WIWStaff.h */,
+				8B92D4331879C80B0048CCD2 /* WIWStaff.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8B92D42E1879BEA80048CCD2 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				8B92D42F1879C76D0048CCD2 /* WIWConnections.h */,
+				8B92D4301879C76D0048CCD2 /* WIWConnections.m */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		8B92D4351879C8F70048CCD2 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				8B92D4361879C9180048CCD2 /* WIWWebToStaff.h */,
+				8B92D4371879C9180048CCD2 /* WIWWebToStaff.m */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
 		8BAAACBC1879AE55003430D9 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +129,7 @@
 				8BAAACF01879AE56003430D9 /* Who is WhoTests */,
 				8BAAACC71879AE55003430D9 /* Frameworks */,
 				8BAAACC61879AE55003430D9 /* Products */,
+				67F1902916CA48FDACBE8222 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +149,7 @@
 				8BAAACCA1879AE55003430D9 /* CoreGraphics.framework */,
 				8BAAACCC1879AE55003430D9 /* UIKit.framework */,
 				8BAAACEA1879AE56003430D9 /* XCTest.framework */,
+				DA1CBEE82ACE4342A46EE2F8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +157,9 @@
 		8BAAACCE1879AE55003430D9 /* Who is Who */ = {
 			isa = PBXGroup;
 			children = (
+				8B92D42D1879BE980048CCD2 /* Model */,
+				8B92D4351879C8F70048CCD2 /* Mapping */,
+				8B92D42E1879BEA80048CCD2 /* Connections */,
 				8BAAACD71879AE55003430D9 /* WIWAppDelegate.h */,
 				8BAAACD81879AE55003430D9 /* WIWAppDelegate.m */,
 				8BAAACDA1879AE55003430D9 /* Main.storyboard */,
@@ -164,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BAAACFA1879AE56003430D9 /* Build configuration list for PBXNativeTarget "Who is Who" */;
 			buildPhases = (
+				3E70F46462C647E6A08CF8B6 /* Check Pods Manifest.lock */,
 				8BAAACC11879AE55003430D9 /* Sources */,
 				8BAAACC21879AE55003430D9 /* Frameworks */,
 				8BAAACC31879AE55003430D9 /* Resources */,
+				84B62D9429A441EE8C339B6A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,15 +297,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E70F46462C647E6A08CF8B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84B62D9429A441EE8C339B6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BAAACC11879AE55003430D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B92D4341879C80B0048CCD2 /* WIWStaff.m in Sources */,
 				8BAAACD91879AE55003430D9 /* WIWAppDelegate.m in Sources */,
 				8BAAACE21879AE55003430D9 /* WIWDetailViewController.m in Sources */,
 				8BAAACDF1879AE55003430D9 /* WIWMasterViewController.m in Sources */,
+				8B92D4381879C9180048CCD2 /* WIWWebToStaff.m in Sources */,
 				8BAAACD51879AE55003430D9 /* main.m in Sources */,
+				8B92D4311879C76D0048CCD2 /* WIWConnections.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +465,7 @@
 		};
 		8BAAACFB1879AE56003430D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F1902916CA48FDACBE8222 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -395,6 +479,7 @@
 		};
 		8BAAACFC1879AE56003430D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F1902916CA48FDACBE8222 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -467,6 +552,7 @@
 				8BAAACFC1879AE56003430D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BAAACFD1879AE56003430D9 /* Build configuration list for PBXNativeTarget "Who is WhoTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +561,7 @@
 				8BAAACFF1879AE56003430D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

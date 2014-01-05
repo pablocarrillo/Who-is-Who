@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WIWStaff.h"
 
 @interface WIWDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) WIWStaff* detailItem;
+/// The name of the staff's member
+@property (weak, nonatomic) IBOutlet UILabel *name;
+/// The job Title of the staff's member
+@property (weak, nonatomic) IBOutlet UILabel *jobTitle;
+/// The photo of the staff's member
+@property (weak, nonatomic) IBOutlet UIImageView *photo;
+/// The biography of the staff's member
+@property (weak, nonatomic) IBOutlet UITextView *biography;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

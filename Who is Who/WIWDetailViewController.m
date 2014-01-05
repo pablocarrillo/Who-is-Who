@@ -7,6 +7,9 @@
 //
 
 #import "WIWDetailViewController.h"
+#import "WIWStaff.h"
+#import "UIImageView+AFNetworking.h"
+
 
 @interface WIWDetailViewController ()
 - (void)configureView;
@@ -15,8 +18,13 @@
 @implementation WIWDetailViewController
 
 #pragma mark - Managing the detail item
-
-- (void)setDetailItem:(id)newDetailItem
+/*!
+ *\brief This method set the object passed by the segue
+ * This method is modified from the boilerplate to admit a WIWStaff* instead of id
+ *\param newDetailItem the WIWStaff object with the info
+ *\return void
+*/
+- (void)setDetailItem:(WIWStaff*)newDetailItem
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
@@ -25,14 +33,30 @@
         [self configureView];
     }
 }
-
+/*!
+ *\brief Load the info on the elements of the view
+ *
+ *\return void
+*/
 - (void)configureView
 {
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.name.text = [self.detailItem name];
+        self.jobTitle.text = [self.detailItem jobTitle];
+        [self.photo setImageWithURL:[NSURL URLWithString:self.detailItem.photoURL]];
+        self.biography.text = [self.detailItem biography];
     }
+}
+/*!
+ *\brief Customize the elements of the view, like set a circle shape for the photo
+ *
+ *\return void
+*/
+-(void)customizeView{
+    self.photo.layer.cornerRadius=self.photo.frame.size.width/2.0f;
+    self.photo.layer.masksToBounds=YES;
 }
 
 - (void)viewDidLoad
@@ -40,6 +64,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    [self customizeView];
 }
 
 - (void)didReceiveMemoryWarning
