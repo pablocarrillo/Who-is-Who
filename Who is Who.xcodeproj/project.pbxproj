@@ -26,7 +26,6 @@
 		8BAAACED1879AE56003430D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAAACCC1879AE55003430D9 /* UIKit.framework */; };
 		8BAAACF51879AE56003430D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8BAAACF31879AE56003430D9 /* InfoPlist.strings */; };
 		8BAAACF71879AE56003430D9 /* Who_is_WhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAAACF61879AE56003430D9 /* Who_is_WhoTests.m */; };
-		8BFBFEC3187A21100095C6CC /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBFEC2187A21100095C6CC /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,7 +285,6 @@
 			files = (
 				8BAAACE41879AE55003430D9 /* Images.xcassets in Resources */,
 				8BAAACD31879AE55003430D9 /* InfoPlist.strings in Resources */,
-				8BFBFEC3187A21100095C6CC /* readme.md in Resources */,
 				8BAAACDC1879AE55003430D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
