@@ -55,6 +55,9 @@
  *\return void
 */
 -(void)customizeView{
+    self.name.textColor=[UIColor colorWithRed:68.0f/255.0f green:68.0f/255.0f blue:68.0f/255.0f alpha:1.0];
+    self.jobTitle.textColor=[UIColor colorWithRed:68.0f/255.0f green:68.0f/255.0f blue:68.0f/255.0f alpha:1.0];
+    self.biography.textColor=[UIColor colorWithRed:136.0f/255.0f green:136.0f/255.0f blue:136.0f/255.0f alpha:1.0];
     self.photo.layer.cornerRadius=self.photo.frame.size.width/2.0f;
     self.photo.layer.masksToBounds=YES;
 }
